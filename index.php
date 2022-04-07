@@ -45,7 +45,7 @@
 				<div class="mb-3">
 					<label for="age" class="col-sm-5 form-label">Age</label>
 					<div class="col-sm-4">
-						<input type="text" name="age" class="form-control" id="age" placeholder="Age" required disabled/> </div>
+						<input type="number" name="age" class="form-control" id="age" placeholder="Age" required disabled/> </div>
 				</div>
 				<div class="mb-3">
 					<label for="dob" class="col-sm-5 form-label">Date of Birth</label>
