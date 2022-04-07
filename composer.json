@@ -1,0 +1,6 @@
+{
+    "require": {
+        "thingengineer/mysqli-database-class": "dev-master",
+        "rakit/validation": "^1.4"
+    }
+}
