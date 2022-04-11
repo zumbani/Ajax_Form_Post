@@ -54,11 +54,11 @@ if ($validation->fails()) {
 			$data['message'] = 'Success! Details successfully captured';
 		} else {
 			$data['success'] = false;
-			$data['error'] = 'Error encountered! Data could not be saved!';
+			$data['error'] = 'Error encountered! SA ID No. already exist.';
 		}
 	} catch (Exception $e) {
 		$data['success'] = false;
-		$data['error'] = 'Error encountered! SA ID No. already exist.';
+		$data['error'] = 'Error encountered! Data could not be saved!.';
 	}
 	echo json_encode($data);
 }

@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="row">
 			<h2 class="text-left">Ajax Form Submission</h2>
-			<form class="needs-validation" method="post" novalidate>
+			<form id="ajax_form" method="post" novalidate>
 				<div class="mb-3">
 					<label for="first_name" class="col-sm-5 form-label">Name</label>
 					<div class="col-sm-7">
@@ -86,6 +86,7 @@
 						'type': 'confirmation',
 						'title': 'Success!'
 					});
+					$("#ajax_form").reset();					
 				} else if(Boolean(data.success) == false) {
 					$.Zebra_Dialog(data.error, {
 						'type': 'error',
